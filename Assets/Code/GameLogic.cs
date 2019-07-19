@@ -181,10 +181,10 @@ public class GameLogic : MonoBehaviour
 		int replacementIndex = text.LastIndexOf("%");
 		if(replacementIndex >= 0)
 		{
-			string[] sentences = reviewText.text.Split('.');
+			string[] sentences = reviewText.text.Split(new string[] { ".", "!" }, System.StringSplitOptions.RemoveEmptyEntries);
 			if(sentences.Length > 0)
 			{
-				responseText.text = text.Replace("%", "\"" + sentences[Random.Range(0, sentences.Length)] + "\"");
+				responseText.text = text.Replace("%", "\n\n\"" + sentences[Random.Range(0, sentences.Length)] + "\"");
 			}
 			else
 			{
@@ -208,9 +208,9 @@ public class GameLogic : MonoBehaviour
 		{
 			criticRating = 0;
 		}
-		if (criticRating >= 10)
+		if (criticRating >= 9)
 		{
-			criticRating = 10;
+			criticRating = 9;
 		}
 
 		SetUI();
