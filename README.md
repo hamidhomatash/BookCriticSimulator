@@ -1,1 +1,3 @@
-# BookCriticSimulator
+# Book Critic Simulator
+
+A game created in a 6 hour game jam called Ludic Literature hosted at Glasgow University. The game puts you in a role as a book critic reviewing authors books for your blog. You want to aspire to become the best book critic, gain as many subscribers as possible and make money doing so! As you settle in to start reviewing, you wonder what kind of attention your reviews will get...
